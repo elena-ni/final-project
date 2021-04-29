@@ -96,8 +96,8 @@ i {
   border-radius: 5px;
   padding: 5px;
   margin-top: 10px;
-  margin-left: 10px;
-  margin-right: -13px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .city .card-body {
@@ -109,8 +109,8 @@ i {
   border: solid 2px #596aca;
   border-radius: 5px;
   margin-top: 10px;
-  margin-left: 17px;
-  margin-right: -26px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding: 5px;
 }
 
