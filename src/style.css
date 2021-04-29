@@ -1,0 +1,123 @@
+h1 {
+  text-align: left;
+  color: #596aca;
+}
+
+p {
+  text-align: left;
+  color: #596aca;
+  margin: 0;
+}
+
+h2 {
+  text-align: right;
+  color: #596aca;
+  font-size: 50px;
+}
+
+h5 {
+  text-align: center;
+  color: rgb(250, 222, 63);
+  margin-bottom: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica;
+}
+
+h6 {
+  text-align: center;
+  color: #596aca;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Inv Maison Neue", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 30px;
+  margin: 5px 0px;
+}
+
+hr {
+  color: rgb(250, 222, 63);
+  border: 2px solid rgb(250, 222, 63);
+  border-radius: 2px;
+  margin: 10px;
+}
+
+input {
+  background-color: rgba(89, 106, 202, 0);
+  border: none;
+  color: #596aca;
+  padding: 5px;
+}
+.today .fas {
+  color: rgb(250, 222, 63);
+  font-size: 100px;
+  text-align: right;
+}
+
+i {
+  color: rgb(250, 222, 63);
+  text-align: center;
+  font-size: 50px;
+}
+
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+.search-button {
+  width: 100%;
+  background-color: rgba(89, 106, 202, 0.3);
+  border: solid 2px #596aca;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.search-button:hover {
+  background-color: white;
+}
+
+.six-days .row .card {
+  border: solid 2px rgb(250, 222, 63);
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.location {
+  border: solid 2px #596aca;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0 20px;
+}
+
+.city .card {
+  background-color: rgba(89, 106, 202, 0.3);
+  border: solid 2px #596aca;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: -13px;
+}
+
+.city .card-body {
+  padding: 0px;
+}
+
+.today .card {
+  background-color: white;
+  border: solid 2px #596aca;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 17px;
+  margin-right: -26px;
+  padding: 5px;
+}
+
+.today .card-body {
+  padding: 5px;
+}
+
+#date {
+  color: #596aca;
+}
