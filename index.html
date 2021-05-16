@@ -40,8 +40,10 @@
           </div>
         </form>
 
+        
         <div class="six-days">
           <div class="row">
+            <div id="forecast">
             <div class="col-2">
               <div class="card">
                 <i class="fas fa-cloud-sun-rain"></i>
@@ -54,6 +56,10 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      
 
             <div class="col-2">
               <div class="card">
@@ -150,15 +156,26 @@
                   <img 
                   id="icon"
                   src="" 
-                  alt="">
-                  <h2></h2>
+                  alt=""
+                  class="float-left">
+
+                  <strong 
+                  id="temperatureNow" 
+                  class="temperatureNow">
+                </strong>
+                
+                <span class="units">
+                  <a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+                
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+    
+      
     <p><a href="https://github.com/elena-ni/final-project"> open source code</a>by Elena N.</p>
   </div>
   <script src="src/index.js"></script>

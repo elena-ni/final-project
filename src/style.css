@@ -13,7 +13,7 @@ p:first-letter {
   text-transform: capitalize;
 }
 
-h2 {
+.temperatureNow {
   text-align: right;
   color: #596aca;
   font-size: 50px;

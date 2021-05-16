@@ -34,6 +34,33 @@ let month = months[now.getMonth()];
 let currentDate = document.querySelector("#date");
 currentDate.innerHTML = ` ${day}, ${month} ${date} <br>${hours}:${minutes}`;
 
+//forecast
+
+function displayForecast(params) {
+  let forecastElement = document.querySelector("#forecast");
+forecastElement.innerHTML = `
+      <div id="forecast">
+        <div class="six-days">
+          <div class="row">
+            <div class="col-2">
+              <div class="card">
+                <i class="fas fa-cloud-sun-rain"></i>
+                <div class="card-body">
+                  <h6>
+                    21 C
+                  </h6>
+                  <hr />
+                  <h5 class="card-title">MON</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      `;
+}
+displayForecast();
+
 // humidity and co
 
 function displayWeatherCondition(response) {
@@ -41,8 +68,8 @@ function displayWeatherCondition(response) {
   let temperature = Math.round(response.data.main.temp);
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${city}`;
-  let h2 = document.querySelector("h2");
-  h2.innerHTML = `${temperature} °C`;
+  let temperatureNow = document.querySelector("#temperatureNow");
+  temperatureNow.innerHTML = `${temperature} °C`;
 
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -53,7 +80,7 @@ function displayWeatherCondition(response) {
   response.data.weather[0].description;
 
   let iconElement = document.querySelector("#icon");
-  
+
     iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
