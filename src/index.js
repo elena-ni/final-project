@@ -36,30 +36,43 @@ currentDate.innerHTML = ` ${day}, ${month} ${date} <br>${hours}:${minutes}`;
 
 //forecast
 
-function displayForecast(params) {
+
+function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-forecastElement.innerHTML = `
-      <div id="forecast">
-        <div class="six-days">
-          <div class="row">
-            <div class="col-2">
-              <div class="card">
-                <i class="fas fa-cloud-sun-rain"></i>
-                <div class="card-body">
-                  <h6>
-                    21 C
-                  </h6>
-                  <hr />
-                  <h5 class="card-title">MON</h5>
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function(day) {
+    
+    forecastHTML =
+    forecastHTML + 
+    `
+        
+          <div class="six-days">
+              <div class="col-2">
+                <div class="card">
+                  <i class="fas fa-cloud-sun-rain"></i>
+                  <div class="card-body">
+                    <h6>
+                      21 C
+                    </h6>
+                    <hr />
+                    <h5 class="card-title">${day}</h5>
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
-        </div>
-      </div>
-      `;
+        
+        `;
+  })
+      
+  forecastHTML = forecastHTML + `</div>` ;
+  forecastElement.innerHTML = forecastHTML;
+
 }
+
 displayForecast();
+
 
 // humidity and co
 
