@@ -125,7 +125,7 @@ function displayWeatherCondition(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-  getForecast(response.data.coords);
+  getForecast(response.data.coord);
 
 }
 
