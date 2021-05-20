@@ -71,7 +71,7 @@ function displayForecast(response) {
                   
                   <div class="card-body">
                     <h6>
-                      max: ${Math.round(forecastDay.temp.max)} <br> min: ${Math.round(forecastDay.temp.min)}
+                      max: ${Math.round(forecastDay.temp.max)}°C <br> min: ${Math.round(forecastDay.temp.min)} °C
                     </h6>
                     <hr />
                     <h5 class="card-title">${formatDay(forecastDay.dt)}</h5>
