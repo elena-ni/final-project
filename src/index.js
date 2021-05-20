@@ -61,7 +61,6 @@ function displayForecast(response) {
               `
               <div class="col-2">
                 <div class="card">
-                <div>${formatDay(forecastDay.dt)}</div>
                 <img
                  src="http://openweathermap.org/img/wn/${
                   forecastDay.weather[0].icon
@@ -72,10 +71,10 @@ function displayForecast(response) {
                   
                   <div class="card-body">
                     <h6>
-                      max: ${Math.round(forecastDay.temp.max)} | min: ${forecastDay.temp.min}
+                      max: ${Math.round(forecastDay.temp.max)} <br> min: ${Math.round(forecastDay.temp.min)}
                     </h6>
                     <hr />
-                    <h5 class="card-title">${forecastDay.dt}</h5>
+                    <h5 class="card-title">${formatDay(forecastDay.dt)}</h5>
                   </div>
                 </div>
               </div>
@@ -145,7 +144,10 @@ function getCurrentPosition(event) {
 
 let button = document.querySelector("#currentlocation");
 button.addEventListener("click", getCurrentPosition);
+
 // normal search
+
+
 
 function searchCity(city) {
   let apiKey = "04099ec4651a549421af8748bfefcc06";
@@ -163,3 +165,6 @@ function handleSubmit(event) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
+
+
+searchCity("Akureyri");
